@@ -1,10 +1,10 @@
 package testStructure;
 
-import java.util.ArrayList;
+import testStructure.interfaces.myList;
 import java.util.Arrays;
-import java.util.List;
 
-public class myArrayList<T> implements List<T> {
+
+public class myArrayList<T> implements myList {
     private Integer defaultCapacity = 16;
     private Integer capacity;
     private  Float defaultCompletion = 0.75f;
@@ -25,9 +25,10 @@ public class myArrayList<T> implements List<T> {
     }
 
     public myArrayList(Integer capacity) {
-        
+
     }
 }
 
-ArrayList
+
+
 
