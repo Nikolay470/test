@@ -37,7 +37,7 @@ public class Student extends User {
     @Override
     public String toString() {
         return String.format(
-                "Студент:\nИмя: %s\nФамилия: %s\nВозраст: %d\nГруппа: %s\nФакультет: %s\n",
+                "Студент.\nИмя: %s\nФамилия: %s\nВозраст: %d\nГруппа: %s\nФакультет: %s\n",
                 this.getName(), this.getSurname(),
                 this.getAge(), this.getGroup(),this.getFaculty()
         );
