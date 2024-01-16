@@ -9,7 +9,6 @@ public abstract class Human {
         this.surname = surname;
     }
 
-
     public String getName() {
         return name;
     }

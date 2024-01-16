@@ -15,6 +15,13 @@ public class Teacher extends Human {
         return this.discipline;
     }
 
+    public String getInfo() {
+        return String.format(
+                "Учитель.\nИмя: %s\nФамилия: %s\nДисциплина: %s",
+                this.getName(), this.getSurname(), discipline
+        );
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

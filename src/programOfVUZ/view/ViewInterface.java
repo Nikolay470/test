@@ -1,10 +1,11 @@
 package programOfVUZ.view;
 
 import java.util.ArrayList;
+import programOfVUZ.model.classes.*;
+import programOfVUZ.model.abstractClasses.Human;
 
 public interface ViewInterface {
-    int getCaregory();
-    String getInfoOfVUZ();
+    int getCategory();
     int choiceMoveOfTeachers();
     int choiceMoveOfStudents();
     int choiceMoveOfGroups();

@@ -6,6 +6,10 @@ public class Faculty {
     private String name;
     private final int quantStudents = 700;
 
+    public Faculty(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
