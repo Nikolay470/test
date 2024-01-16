@@ -1,4 +1,4 @@
-package programOfVUZ.model.classes;
+package programOfVUZ.model.abstractClasses;
 
 public abstract class Human {
     private String name;

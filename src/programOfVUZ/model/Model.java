@@ -11,7 +11,7 @@ public class Model implements ModelInterface {
     private ArrayList<Faculty> faculties = new ArrayList<Faculty>();
 
     @Override
-    public void addStudent(String name, String surname, String facukty) {
+    public void addStudent(String name, String surname, String faculty) {
 
     }
 
