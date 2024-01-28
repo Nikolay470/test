@@ -1,8 +1,18 @@
 package testStructure.interfaces;
 
+import java.util.Comparator;
+import java.util.List;
+
 public interface myList<T> {
-    boolean add();
-    boolean remove();
+    void add(T item);
+    T remove(int index);
+    T remove(T item);
     void sort();
-    void get(int index);
+    void sort(Comparator<T> compar);
+    T get(int index);
+    boolean contains(T item);
+    boolean containsAll(List<? extends T> coll);
+    T[] removeAll(List<? extends T> coll);
+    int size();
+
 }
