@@ -74,13 +74,12 @@ public class MyArrayList<T> implements MyList<T>, Iterable<T>, Comparable<MyArra
             if (this.array[i].equals(item)) {
                 itemRemove = (T) this.array[i];
                 this.array[i] = null;
-                this.size = this.size - 1;
                 this.sort();
+                this.size = this.size - 1;
                 return itemRemove;
             }
         } return itemRemove;
     }
-
     @Override
     public void sort() {
         MergeSort.mergeSort(this.array);
@@ -176,7 +175,7 @@ public class MyArrayList<T> implements MyList<T>, Iterable<T>, Comparable<MyArra
     public String toString() {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < this.size(); i++) {
-            builder.append(this.array[i].toString() + "\n");
+            builder.append(this.array[i] + "\n");
         }
         return builder.toString();
     }
