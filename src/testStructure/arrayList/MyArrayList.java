@@ -1,4 +1,4 @@
-package testStructure;
+package testStructure.arrayList;
 
 import testStructure.interfaces.MyList;
 import testStructure.mergeSort.MergeSort;
@@ -86,7 +86,7 @@ public class MyArrayList<T> implements MyList<T>, Iterable<T>, Comparable<MyArra
     }
 
     @Override
-    public void sort(Comparator<Object> compare) {
+    public void sort(Comparator compare) {
         MergeSort.mergeSort(this.array, compare);
     }
 

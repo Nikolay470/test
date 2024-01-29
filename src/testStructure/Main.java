@@ -1,5 +1,8 @@
 package testStructure;
 
+import testStructure.arrayList.ComparatorMyList;
+import testStructure.arrayList.MyArrayList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +16,9 @@ public class Main {
         List<String> list = new ArrayList<>();
         list.add("tom");
         list.add("jon");
-        myList.containsAll(list);
 
-        System.out.println(myList.containsAll(list));
+        myList.sort(new ComparatorMyList());
+        System.out.println(myList);
 
         MyArrayList<String> myList2 = new MyArrayList<>();
         myList2.add("nik");

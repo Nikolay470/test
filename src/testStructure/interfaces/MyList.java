@@ -8,7 +8,7 @@ public interface MyList<T> {
     T remove(int index);
     T remove(T item);
     void sort();
-    void sort(Comparator<Object> compare);
+    void sort(Comparator compare);
     T get(int index);
     boolean contains(T item);
     boolean containsAll(List<T> coll);

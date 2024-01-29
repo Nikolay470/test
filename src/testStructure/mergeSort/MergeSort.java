@@ -55,7 +55,7 @@ public class MergeSort {
         }
     }
 
-    public static void mergeSort(Object[] array, Comparator<Object> compare) {
+    public static void mergeSort(Object[] array, Comparator compare) {
         if (array.length == 1) {
             return;
         }
