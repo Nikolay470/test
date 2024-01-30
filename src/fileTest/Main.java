@@ -17,17 +17,19 @@ public class Main {
 //        while (reader.ready()) {
 //            System.out.print((char) reader.read());
 //        }
-        ArrayList<String> arr = new ArrayList<>();
-        arr.add("tom");
-        arr.add("jon");
-        arr.add("nik");
-        LinkedList<String> list = new LinkedList<>();
-        list.add("nik");
-        list.add("jon");
-        list.add("tom");
+//        ArrayList<String> arr = new ArrayList<>();
+//        arr.add("tom");
+//        arr.add("jon");
+//        arr.add("nik");
+//        LinkedList<String> list = new LinkedList<>();
+//        list.add("nik");
+//        list.add("jon");
+//        list.add("tom");
+//
+//        if (arr.equals(list)) {
+//            System.out.println("Они раваны");
+//        }
 
-        if (arr.equals(list)) {
-            System.out.println("Они раваны");
-        }
+
     }
 }

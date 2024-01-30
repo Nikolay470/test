@@ -1,6 +1,5 @@
-package testStructure.mergeSort;
+package testStructure.arrayList.mergeSort;
 
-import java.util.Arrays;
 import java.util.Comparator;
 
 

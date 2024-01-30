@@ -1,4 +1,4 @@
-package testStructure.interfaces;
+package testStructure.arrayList.interfaces;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,7 +1,7 @@
 package testStructure.arrayList;
 
-import testStructure.interfaces.MyList;
-import testStructure.mergeSort.MergeSort;
+import testStructure.arrayList.interfaces.MyList;
+import testStructure.arrayList.mergeSort.MergeSort;
 
 import java.util.*;
 
@@ -50,10 +50,21 @@ public class MyArrayList<T> implements MyList<T>, Iterable<T>, Comparable<MyArra
         this.completion = value;
     }
 
+    public int length() {
+        return this.array.length;
+    }
+
     @Override
     public void add(T item) {
-        this.array[size] = item;
-        size++;
+        int levelCompletion = (int) (this.array.length * this.completion);
+        if (this.size() >= levelCompletion) {
+            Object[] newArr = new Object[this.array.length * 2];
+            System.arraycopy(newArr, 0, this.array, 0, this.size());
+            this.array = newArr;
+            this.array[size++] = item;
+        } else {
+            this.array[size++] = item;
+        }
     }
 
     @Override
