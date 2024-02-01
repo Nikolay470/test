@@ -74,7 +74,7 @@ public class MergeSort {
         merge(array, left, right, compare);
     }
 
-    public static void merge(
+    private static void merge(
             Object[] array, Object[] left, Object[] right, Comparator<Object> compare
     ) {
         int k = 0, l = 0, r = 0;
